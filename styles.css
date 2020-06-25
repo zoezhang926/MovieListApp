@@ -1,0 +1,93 @@
+body{
+    background-image: url("theater.jpg");
+    background-size: cover;
+}
+h1{
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    background-image: -webkit-linear-gradient(left,blue,#66ffff 10%,#cc00ff 20%,#CC00CC 30%, #CCCCFF 40%, orange 50%,#CCCCFF 60%,#CC00CC 70%,#CC00FF 80%,yellow 90%,blue 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-background-size: 200% 100%; 
+    -webkit-animation: masked-animation 4s linear infinite;
+    font-size: 35px;
+    text-align: center;
+}
+@keyframes masked-animation {
+    0% {
+        background-position: 0  0;
+    }
+    100% {
+        background-position: -100%  0;
+    }
+}
+
+input{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;   
+}
+input:focus{
+    border-color: hotpink;
+    width: 280px;
+}
+.btn{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid orange;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.btn:hover{
+    background:hotpink;
+}
+div{
+    display: block;
+    text-align: center;
+}
+form,
+table{
+    display:inline-block;
+    text-align:center;
+}
+table{
+    border:2px solid #3498db;
+    width: 600px;
+    border-radius: 10px;
+}
+tbody{
+    margin:20px;
+}
+table tr,table td, table button,table th{
+    width: 200px;
+    color: white;
+    background-color:rgba(241, 115, 241, 0.2);
+    border-radius: 5px;
+    padding: 5px;
+}
+tr :nth-child(odd){
+    background-color:rgba(253, 15, 126, 0.4);
+}
+tr :nth-child(even){
+    background-color: rgb(119, 205, 245,0.2);
+}
+.newMovie{
+    margin-top: 50px;
+}
